@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<trb1-trailblazer>.freeze, [">= 1.0.4"])
       s.add_runtime_dependency(%q<trailblazer-loader>.freeze, [">= 0.1.0"])
-      s.add_runtime_dependency(%q<reform-rails>.freeze, [">= 0.1.4"])
+      s.add_runtime_dependency(%q<trb1-reform-rails>.freeze, [">= 0.1.4"])
       s.add_development_dependency(%q<bundler>.freeze, ["~> 1.10"])
       s.add_development_dependency(%q<rake>.freeze, ["~> 10.0"])
       s.add_development_dependency(%q<minitest>.freeze, [">= 0"])
@@ -36,7 +36,7 @@ Gem::Specification.new do |s|
     else
       s.add_dependency(%q<trb1-trailblazer>.freeze, [">= 1.0.4"])
       s.add_dependency(%q<trailblazer-loader>.freeze, [">= 0.1.0"])
-      s.add_dependency(%q<reform-rails>.freeze, [">= 0.1.4"])
+      s.add_dependency(%q<trb1-reform-rails>.freeze, [">= 0.1.4"])
       s.add_dependency(%q<bundler>.freeze, ["~> 1.10"])
       s.add_dependency(%q<rake>.freeze, ["~> 10.0"])
       s.add_dependency(%q<minitest>.freeze, [">= 0"])
@@ -51,7 +51,7 @@ Gem::Specification.new do |s|
   else
     s.add_dependency(%q<trb1-trailblazer>.freeze, [">= 1.0.4"])
     s.add_dependency(%q<trailblazer-loader>.freeze, [">= 0.1.0"])
-    s.add_dependency(%q<reform-rails>.freeze, [">= 0.1.4"])
+    s.add_dependency(%q<trb1-reform-rails>.freeze, [">= 0.1.4"])
     s.add_dependency(%q<bundler>.freeze, ["~> 1.10"])
     s.add_dependency(%q<rake>.freeze, ["~> 10.0"])
     s.add_dependency(%q<minitest>.freeze, [">= 0"])

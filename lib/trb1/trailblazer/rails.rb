@@ -8,7 +8,7 @@ module Trb1
   end
 end
 
-require "reform/rails"
+require "trb1-reform/rails"
 require "trb1/trailblazer/rails/railtie"
 
 require "trb1-trailblazer/operation"
@@ -16,7 +16,7 @@ require "trb1-trailblazer/operation"
 Trb1::Trailblazer::Operation.contract_class.class_eval do
   def self.name
     # for whatever reason, validations climb up the inheritance tree and require _every_ class to have a name (4.1).
-    "Reform::Form"
+    "Trb1::Reform::Form"
   end
 end
 
