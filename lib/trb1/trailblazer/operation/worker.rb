@@ -79,7 +79,7 @@ class Trb1::Trailblazer::Operation
     private
       module ClassMethods
         def file_marshaller_representer
-          @file_marshaller_representer ||= contract_class.schema(include: [Representable::Hash]).apply do |dfn|
+          @file_marshaller_representer ||= contract_class.schema(include: [Trb1::Representable::Hash]).apply do |dfn|
             dfn.merge!(
               getter: lambda { |*| self[dfn.name.to_sym] },
               setter: lambda { |fragment, *| self[dfn.name.to_s] = fragment }
@@ -104,7 +104,7 @@ class Trb1::Trailblazer::Operation
 
       # todo: do with_indifferent_access in #deserialize and call super here.
       def deserializable(hash)
-        # self.class.file_marshaller_representer.new({}).extend(Representable::Debug).from_hash(hash)
+        # self.class.file_marshaller_representer.new({}).extend(Trb1::Representable::Debug).from_hash(hash)
         self.class.file_marshaller_representer.new({}.with_indifferent_access).from_hash(hash)
       end
     end
